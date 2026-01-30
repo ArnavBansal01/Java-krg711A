@@ -1,0 +1,59 @@
+Experiment - 1
+
+
+
+class Student {
+  public int a;
+  public int i;
+  public int m;
+
+  Student()
+  {
+      a = 20;
+      i = 100;
+      m = 80;
+  }
+
+  Student(int x, int y, int z)
+  {
+      a = x;
+      i = y;
+      m = z;
+  }
+
+  public void display()
+  {
+      System.out.println("age :" + a);
+      System.out.println("uid :" + i);
+      System.out.println("marks :" + m);
+  }
+
+  public static void main(String[] args)
+  { 
+      Student sc = new Student();
+      sc.display();
+  }
+}
+
+Experiment - 2
+
+class Area {
+    public int l;
+    public int b;
+
+    public void shape(int x, int y) {
+        int ar = x * y;
+        System.out.println("rectangle :" + ar);
+    }
+
+    public void shape(int x) {
+        int ar2 = x * x;
+        System.out.println("swuare :" + ar2);
+    }
+
+    public static void main(String[] args) {
+        Area obj = new Area();
+        obj.shape(5, 3);
+        obj.shape(5);
+    }
+}
